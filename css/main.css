@@ -1470,7 +1470,7 @@ input::-moz-focus-inner {
   margin: 3rem 0 0 0;
   text-align: center;
   position: absolute;
-  top: 100%;
+  top: 98%;
   left: 0;
 }
 
@@ -2815,8 +2815,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-clients {
-  padding-top: 16.2rem;
-  padding-bottom: 16.8rem;
+  padding-top: 4.2rem;
+  padding-bottom: 3rem;
   background-color: #e6e6e6;
   color: #757575;
   position: relative;
@@ -2834,8 +2834,10 @@ html.no-csstransitions .home-content__main {
 
 .clients__slide {
   display: block;
-  opacity: 0.55;
-  padding: 1.5rem 2.8rem;
+  /* filter: grayscale(1); */
+  opacity: 0.6;
+  justify-content: center;
+  padding: 1.5rem 8rem;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
@@ -2882,13 +2884,21 @@ html.no-csstransitions .home-content__main {
   margin-bottom: 6rem;
 }
 
+.clients-testimonials .testimonials img {
+  object-fit: cover;
+}
+
+.clients-testimonials .testimonials img:hover {
+  cursor: pointer;
+}
+
 .clients-testimonials .testimonials__slide {
   padding: 0 0 3rem 0;
 }
 
 .clients-testimonials .testimonials__avatar {
-  height: 8.4rem;
-  width: 8.4rem;
+  height: 35rem;
+  width: 35rem;
   border-radius: 50%;
   margin: 0 auto 1.2rem auto;
 }
@@ -2960,11 +2970,17 @@ html.no-csstransitions .home-content__main {
   .clients-testimonials .testimonials .slick-next {
     right: -100px;
   }
+  .clients {
+    height: 10rem;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
   .clients-testimonials .testimonials p {
     font-size: 2.2rem;
+  }
+  .clients__slide {
+    padding: 1.5rem 6rem;
   }
 }
 
@@ -2973,7 +2989,7 @@ html.no-csstransitions .home-content__main {
     width: 400px;
   }
   .clients-testimonials .testimonials {
-    margin: 0 2rem;
+    margin: 0 0rem;
   }
   .clients-testimonials .testimonials .slick-arrow {
     top: auto;
@@ -2985,12 +3001,13 @@ html.no-csstransitions .home-content__main {
   .clients-testimonials .testimonials .slick-next {
     right: 0;
   }
+  .clients-testimonials .testimonials__avatar {
+    height: 20rem;
+    width: 20rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .s-clients {
-    padding-top: 12rem;
-  }
   .clients-testimonials::before {
     width: 250px;
   }
@@ -2999,6 +3016,9 @@ html.no-csstransitions .home-content__main {
   }
   .clients-testimonials .testimonials p {
     font-size: 2rem;
+  }
+  .clients__slide {
+    padding: 1.5rem 4rem;
   }
 }
 
@@ -3017,8 +3037,9 @@ html.no-csstransitions .home-content__main {
   background-image: url("../images/wheel-2000.jpg");
   background-repeat: no-repeat;
   background-position: center, center;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  background-size: cover;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
   color: rgba(255, 255, 255, 0.5);
   position: relative;
 }

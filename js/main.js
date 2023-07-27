@@ -175,8 +175,6 @@
     });
   };
 
-
-
   /* Masonry
    * ---------------------------------------------------- */
   var clMasonryFolio = function () {
@@ -197,8 +195,8 @@
       arrows: false,
       dots: true,
       infinite: true,
-      slidesToShow: 6,
-      slidesToScroll: 2,
+      slidesToShow: 3,
+      slidesToScroll: 1,
       //autoplay: true,
       pauseOnFocus: false,
       autoplaySpeed: 1000,
@@ -317,24 +315,19 @@
     // const phone = document.getElementById("Phone").value;
     // const message = document.getElementById("Message").value;
 
-
-
-  //   if (name.length < 2) {
-  //     $error['name'] = "Please enter your name.";
-  // }
-  // // Check Email
-  // if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
-  //     $error['email'] = "Please enter a valid email address.";
-  // }
-  // // Check Message
-  // if (strlen($contact_message) < 15) {
-  //     $error['message'] = "Please enter your message. It should have at least 15 characters.";
-  // }
-  // // Subject
-  // if ($subject == '') { $subject = "Contact Form Submission"; }
-
-
-
+    //   if (name.length < 2) {
+    //     $error['name'] = "Please enter your name.";
+    // }
+    // // Check Email
+    // if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
+    //     $error['email'] = "Please enter a valid email address.";
+    // }
+    // // Check Message
+    // if (strlen($contact_message) < 15) {
+    //     $error['message'] = "Please enter your message. It should have at least 15 characters.";
+    // }
+    // // Subject
+    // if ($subject == '') { $subject = "Contact Form Submission"; }
 
     let isValid = false;
 

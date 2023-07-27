@@ -1953,16 +1953,14 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
     0 == a.length
       ? (this.$slider = t("<img />").prependTo(this.$mirror))
       : ((this.$slider = a.prependTo(this.$mirror)), (n = !0)),
-      this.$mirror
-        .addClass("parallax-mirror")
-        .css({
-          visibility: "hidden",
-          zIndex: this.zIndex,
-          position: "fixed",
-          top: 0,
-          left: 0,
-          overflow: "hidden",
-        }),
+      this.$mirror.addClass("parallax-mirror").css({
+        visibility: "hidden",
+        zIndex: this.zIndex,
+        position: "fixed",
+        top: 0,
+        left: 0,
+        overflow: "hidden",
+      }),
       this.$slider.addClass("parallax-slider").one("load", function () {
         (h.naturalHeight && h.naturalWidth) ||
           ((h.naturalHeight = this.naturalHeight || this.height || 1),
@@ -3577,7 +3575,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
       : "object" == typeof module && module.exports
       ? (module.exports = e)
       : (this.EventEmitter = e);
-}.call(this),
+}).call(this),
   (function (e) {
     function t(t) {
       var n = e.event;
@@ -3832,7 +3830,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
       o.makeJQueryPlugin(),
       o
     );
-  }));
+  });
 
 /*
      _ _      _       _
